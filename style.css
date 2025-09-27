@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  min-width: 250px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  color: #004d40;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+#blinkCount, #streakDiv, #badgeDiv {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #004d40;
+}
+
+#webcam {
+  border: 3px solid #00796b;
+  border-radius: 15px;
+}
+
+#chartCard canvas {
+  width: 100% !important;
+  height: 250px !important;
+}
+
+button {
+  padding: 12px 25px;
+  margin: 20px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
