@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Blink Assistant 3.2</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Smart Blink Assistant 3.2</h1>
+  </header>
+
+  <main>
+    <section class="card" id="timerCard">
+      <h2>Next Reminder</h2>
+      <div id="timer"><span id="minutes">20</span>:<span id="seconds">00</span></div>
+    </section>
+
+    <section class="card" id="blinkCard">
+      <h2>Total Blinks Today</h2>
+      <div id="blinkCount">0</div>
+    </section>
+
+    <section class="card" id="streakCard">
+      <h2>Current Streak</h2>
+      <div id="streakDiv">0 days</div>
+      <h3>Badges</h3>
+      <div id="badgeDiv">None</div>
+    </section>
+
+    <section class="card" id="webcamCard">
+      <h2>Webcam</h2>
+      <video id="webcam" autoplay playsinline width="320" height="240"></video>
+    </section>
+
+    <section class="card" id="chartCard">
+      <h2>Blinks per Session</h2>
+      <canvas id="blinkChart"></canvas>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
