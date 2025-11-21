@@ -1,4 +1,4 @@
-# Smart Blink Assistant 3.0
+# Smart Blink Assistant 
 
 **Smart Blink Assistant** is a personal project that monitors your blinking habits to reduce eye strain while using digital devices. Built with HTML, CSS, JavaScript, and MediaPipe for real-time webcam blink detection.
 
